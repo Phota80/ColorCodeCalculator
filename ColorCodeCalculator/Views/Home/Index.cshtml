@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row" style="padding-top:30px;padding-bottom:15px;">
+        <div class="col-md-2">
+            1st Band:
+        </div>
+        <div class="col-md-6">
+            @Html.DropDownList("colBands1", (List<SelectListItem>)ViewBag.band1, "Select a Color", new { @required = "required", @style = "width:250px" })
+
+        </div>
+    </div>
+
+    <div class="row" style="padding-bottom:15px;">
+        <div class="col-md-2">
+            2nd Band:
+        </div>
+        <div class="col-md-6" style="width:200px;">
+            @Html.DropDownList("colBands2", (List<SelectListItem>)ViewBag.band2, "Select a Color", new { @required = "required", @style = "width:250px" })
+        </div>
+    </div>
+    <div class="row" style="padding-bottom:15px;">
+        <div class="col-md-2">
+            Multiplier:
+        </div>
+        <div class="col-md-6">
+            @Html.DropDownList("colBands3", (List<SelectListItem>)ViewBag.band3, "Select a Color", new { @required = "required", @style = "width:250px" })
+        </div>
+    </div>
+    <div class="row" style="padding-bottom:30px;">
+        <div class="col-md-2">
+            Tolerance:
+        </div>
+        <div class="col-md-6">
+            @Html.DropDownList("colBands4", (List<SelectListItem>)ViewBag.band4, new { @style = "width:250px" })
+        </div>
+    </div>
+
+    if ((@ViewBag.result ?? "") == "" ? false : true)
+    {
+        <div class="row" style="padding-bottom:5px;">
+            <div class="col-md-2">
+                Resistor Value:
+            </div>
+            <div class="col-md-6" style="color:orangered">
+                @ViewBag.result Ohms
+            </div>
+        </div>
+        <div class="row" style="padding-bottom:15px;">
+            <div class="col-md-2">
+                Tolerance Value:
+            </div>
+            <div class="col-md-6" style="color:orangered">
+                @ViewBag.tolerance %
+            </div>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-12">
+            <input type="submit" value="Calculate" />
+        </div>
+    </div>
+}
