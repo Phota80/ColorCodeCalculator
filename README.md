@@ -2,7 +2,7 @@
 (ASP.NET MVC Application)
 
 #Description
-This app implements an color code calculator for registor based on the information found [here](http://en.wikipedia.org/wiki/Electronic_color_code)on Wikipedia and the interface provided below:
+This app implements an color code calculator for registor based on the information found [here](http://en.wikipedia.org/wiki/Electronic_color_code) on Wikipedia and the interface provided below:
 
 public interface IOhmValueCalculator
 
@@ -27,6 +27,6 @@ public interface IOhmValueCalculator
 }
 
 ##How to run the color-code-calculator project
-Step 1: Down the the project zip or clone the project
+Step 1: Download the zip or clone the project with HTTP
 Step2: Open the Solution file in Visual studio 2013 or above
 Step3: Build & run the solution
