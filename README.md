@@ -1,7 +1,8 @@
 ##Color Code Calculator##
+(ASP.NET MVC Application)
 
 #Description
-This app implements an color code calculator for registor based on the information found here on Wikipedia and the interface provided below:
+This app implements an color code calculator for registor based on the information found [here](http://en.wikipedia.org/wiki/Electronic_color_code)on Wikipedia and the interface provided below:
 
 public interface IOhmValueCalculator
 
