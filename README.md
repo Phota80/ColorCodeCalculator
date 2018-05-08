@@ -26,8 +26,10 @@ public interface IOhmValueCalculator
 
 }
 
-##How to run the color-code-calculator project/n
+##How to run the color-code-calculator project
 
-Step 1: Download the zip or clone the project with HTTPs url/n
-Step2: Open the Solution file in Visual studio 2013 or above/n
+Step 1: Download the zip or clone the project with HTTPs url
+
+Step2: Open the Solution file in Visual studio 2013 or above
+
 Step3: Build & run the solution
